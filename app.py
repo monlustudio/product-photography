@@ -68,7 +68,7 @@ else:
 
 # --- 生成 ---
 if st.button("生成提示詞"):
-    prompt = f"Product photography, {photo_type}, {aspect_ratio}, {angle}, {light_type}, {color_temp}, {light_dir} light from {light_pos} side,請依照所提供的商品圖片以及參考圖片（若有參考圖片）製作成一張極具擬真 超高畫值的8K商業攝影照片 並須嚴格遵守以上列出之條件. "
+    prompt = f"請依照所提供的商品圖片以及參考圖片（若有參考圖片）製作成一張極具擬真 超高畫值的8K商業攝影照片 並須嚴格遵守以下列出之條件,Product photography, {photo_type}, {aspect_ratio}, {angle}, {light_type}, {color_temp}, {light_dir} light from {light_pos} side. "
     if has_model == "是":
         prompt += f"Model involved: {', '.join(model_parts)}, Action: {model_action}. "
     prompt += f"Style: {', '.join(styles)}. Background: {bg_prompt}."
