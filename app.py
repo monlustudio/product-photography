@@ -70,6 +70,6 @@ if props == "是":
 # --- 生成提示詞 ---
 if st.button("生成專業提示詞"):
     # 這裡加入您的 Prompt 生成邏輯
-    prompt = f"Professional product photography, {photo_type}, {aspect_ratio}, {angle}, lighting: {lighting}, color temp: {color_temp}, light direction: {light_dir}..."
+    prompt = f"Professional product photography, {photo_type}, {aspect_ratio}, {angle}, lighting: {lighting}, color temp: {color_temp}, light direction: {light_dir}...請依照所提供的商品圖片以及參考圖片（若有參考圖片）製作成一張極具擬真 超高畫值的8K商業攝影照片 並須嚴格遵守以上列出之條件"
     st.text_area("生成的 Prompt", prompt, height=200)
     st.button("複製提示詞")
